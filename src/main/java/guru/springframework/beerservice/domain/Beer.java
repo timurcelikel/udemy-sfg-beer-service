@@ -1,6 +1,5 @@
 package guru.springframework.beerservice.domain;
 
-import guru.springframework.beerservice.web.model.BeerStyle;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -35,7 +34,7 @@ public class Beer {
 	private Timestamp lastModifiedDate;
 
 	private String beerName;
-	private BeerStyle beerStyle;
+	private String beerStyle;
 
 	@Column(unique = true)
 	private Long upc;
