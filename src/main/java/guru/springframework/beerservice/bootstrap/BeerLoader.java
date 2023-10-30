@@ -30,7 +30,7 @@ public class BeerLoader implements CommandLineRunner {
 					.beerName("Mango Bobs")
 					.beerStyle(BeerStyle.IPA.toString())
 					.quantityToBrew(200)
-					.upc(337574358735L)
+					.upc("0063457435426")
 					.price(new BigDecimal("2.75"))
 					.build());
 
@@ -38,7 +38,15 @@ public class BeerLoader implements CommandLineRunner {
 					.beerName("Galaxy Cat")
 					.beerStyle(BeerStyle.ALE.toString())
 					.quantityToBrew(200)
-					.upc(3375743583536L)
+					.upc("0033757435835")
+					.price(new BigDecimal("2.41"))
+					.build());
+
+			beerRepository.save(Beer.builder()
+					.beerName("No Hammers On The Bar")
+					.beerStyle(BeerStyle.ALE.toString())
+					.quantityToBrew(200)
+					.upc("0084777435934")
 					.price(new BigDecimal("2.41"))
 					.build());
 		}
